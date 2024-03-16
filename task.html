@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+  $("#start").click(function(){
+    var div = $("div");
+    div.animate({left: '50%'}, "slow"); 
+    div.animate({top: '50%'}, "slow");
+    div.animate({color: 'white'}, "slow");
+  });
+  $("#stop").click(function(){
+      $("div").stop(); 
+});
+});
+
+</script>
+<style>
+   button{
+       border-radius: 5px;
+       text-align: center;
+       padding: 10px;
+       margin: 10px;
+       border: 2px solid black;
+       cursor: pointer;
+      
+   }
+   #start{
+       background-color: green;
+       color: aliceblue;
+       font-weight: bold;
+       margin-left: 550px;
+   }
+   #stop{
+       background-color: red;
+       color: aliceblue;
+       font-weight: bold;
+   }
+</style>
+
+</head>
+
+<body>
+
+
+
+<button id="start">Start Animation</button>
+<button id="stop">Stop Animation</button><br>
+<div style ="margin-top: 20px;border-radius:50%;background:#75056c;height:150px;width:150px;position:absolute;"></div>

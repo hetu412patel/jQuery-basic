@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+  $(function(){
+      $("#childdiv").appendTo("#parentdiv");
+  })
+
+});
+
+</script>
+<style>
+    #parentdiv{
+        height: 100px;
+        width: 500px;
+        margin: 10px;
+        background: red;
+    }
+    #childdiv{
+        height: 50px;
+        width: 400px;
+        margin: 10px;
+        background: skyblue;
+    }
+</style>
+
+</head>
+
+<body>
+
+<form id="form1" runat="server">
+    <div id="parentdiv">
+        <label>Parent Div Content Here</label>
+    </div>
+    <div id="childdiv">
+        <label>child Div Content Here</label>
+    </div>
+</form>
+
+
+
+</body>
+
+</html>

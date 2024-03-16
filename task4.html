@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){ 
+            $("#btn1").click(function(){
+
+                $("#div1").empty();
+
+                });
+
+            $("#btn2").click(function(){
+
+                $("#div1").remove();
+
+                });
+            $("#btn3").click(function(){  
+                   $("#div2").before("<b>Webdevelopment basic languages: HTML,css,js</b>"); 
+                  }); 
+            $("#btn4").click(function(){  
+                   $("#div2").after("<b>Webdevelopment backend languages: php,js,python,java </b>");  
+                 });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1" style="height:200px;width:400px;border:1px solid black;background-color:lightskyblue;">
+            <h3>Webdevelopment basic languages</h3>
+            <ol>
+                <li><b>HTML</b></li>
+                <li><b>CSS</b></li>
+                <li><b>JavaScript</b></li>
+            </ol>
+        </div><br>
+        <button id="btn1">clear content</button>
+        <button id="btn2">Remove all</button><br>
+        <br><div id="div2" style="height:200px;width:400px;border:1px solid black;background-color:lightskyblue;">
+            <h3>Webdevelopment frameworks</h3>
+            <ol>
+                <li><b>Express</b></li>
+                <li><b>Django</b></li>
+                <li><b>Angular</b></li>
+            </ol>
+        </div><br><br>
+        <button id="btn3">Add before</button>
+        <button id="btn4">Add after</button><br>
+    </body>
+</html>

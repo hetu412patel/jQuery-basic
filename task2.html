@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#btn1").click(function(){
+                    alert("Hetakshi Patel"); 
+                 });
+              $("#btn3").click(function(){
+                $("#test2").val("Janvi Patel");
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <p>To show my name please click on the below button.</p>
+        <button id="btn1">Show name</button>
+        <p>To change my name please click on the below button.</p>
+        <p>Name: <input type="text" id="test2" value="Hetakshi Patel"></p>
+        <button id="btn3">Set name</button>
+    </body>
+</html>
+
